@@ -1,15 +1,3 @@
-version: "3"
-services:
-  my-service:
-    image: my-image
-    volumes:
-      - /chat:/chat
-    ports:
-      - "8090:8090"
-
-volumes:
-  my-volume:
-
 FROM alpine:3 as downloader
 
 ARG TARGETOS
